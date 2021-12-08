@@ -9,7 +9,7 @@ var photoArray = [];
 const count = 30;
 const apiKey = 'KKpFbYa7Zl3mRXI5qtVxjW7a5jYowWTy58PpJSOK_1o';
 
-const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+const apiURL = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&orientation=landscape`;
 
 
 //  Helper Function
