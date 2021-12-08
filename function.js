@@ -35,7 +35,7 @@ function displayPhoto(){
         // item.setAttribute('href', photo.links.html);
         // item.setAttribute('target', '_blank');
         setAttributes(item,{
-            'href' : photo.lnks.html,
+            'href' : photo.links.html,
             'target' : '_blank'
         });
 
