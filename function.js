@@ -22,6 +22,7 @@ function setAttributes(element,attributes){
 function imageLoaded(){
     imageLoaded++;
     if(imageLoaded === totalImages){
+        loader.hidden = true;
         ready = true;
         imageLoaded = 0;
     }
