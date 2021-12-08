@@ -20,9 +20,11 @@ function setAttributes(element,attributes){
 }
 
 function imageLoaded(){
-    imageLoaded++;
-    if(imageLoaded === totalImages){
+    images++;
+    if(images > 0){
         loader.hidden = true;
+    }
+    if(images === totalImages){
         ready = true;
         imageLoaded = 0;
     }
@@ -46,7 +48,7 @@ function displayPhoto(){
         setAttributes(img,{
             'src' : photo.urls.regular,
             'alt' : photo.alt_description,
-            'titile' : photo.alt_description
+            'title' : photo.alt_description
         });
 
         img.addEventListener('load',imageLoaded);
